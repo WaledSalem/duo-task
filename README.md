@@ -1,5 +1,8 @@
 # Duo Task
-This is a basic Flask application that serves a simple static website that returns the machine's hostname.
-It is directly accessible on port 5500.
-Set the environment variable YOUR_NAME to your name to have the app display your name in its welcome message. Otherwise, it will refer to you as "friend".
-The nginx.conf file can be used to configure an NGINX container to run as a reverse proxy to the Flask app container, effectively making the Flask application accessible on port 80. You will need to know how to configure networks in Docker in order to achieve this.
+This exercise gets you to containerise a basic Flask application and use NGINX as a reverse proxy.
+
+Containerise the Flask application in this repository
+You will have to write a Dockerfile to build the image - a Dockerfile template has been provided for you.
+Create a network and connect the Flask app container and an NGINX container to it
+Remember to bind mount the nginx.conf file as shown in the tutorial above
+Navigate to your application either through your browser or on the command line with curl localhost.
